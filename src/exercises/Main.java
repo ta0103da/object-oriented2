@@ -36,11 +36,9 @@ public class Main {
         mat[3].setName("木");
         mat[3].setCost(500);
 
-        MedalFactory medalFactory = new MedalFactory();
+        MedalFactory medalFactory = new MedalFactory(emp);
 
-        Medal[] medalInfo = new Medal[4];
-
-        medalInfo = medalFactory.makeMedal(mat);
+        Medal[] medalInfo = medalFactory.makeMedal(mat);
 
         for(int i=0;i<medalInfo.length;i++){
         System.out.println("製品名：" + medalInfo[i].getName() + "メダル　/　価格：" + medalInfo[i].getPrice(null));

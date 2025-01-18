@@ -1,6 +1,6 @@
 package exercises;
 
-public class Material extends MedalFactory{
+public class Material {
 
     private String name;
     private int cost;
@@ -18,6 +18,9 @@ public class Material extends MedalFactory{
         this.cost = cost;
     }
 
-    
+    @Override
+	public String toString() {
+		return "Material [name=" + name + ", cost=" + cost + "]";
+	}
 
 }

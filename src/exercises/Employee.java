@@ -1,6 +1,6 @@
 package exercises;
 
-public class Employee extends MedalFactory{
+public class Employee {
 
     private String name;
     private int salary;
